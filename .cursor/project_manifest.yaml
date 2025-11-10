@@ -1,0 +1,45 @@
+project:
+  name: "asilParla"
+  version: "1.17.02"
+  description: "Trendyol satıcıları için uçtan uca AI destekli yönetim sistemi (API, Mobil, Admin)."
+  languages: ["python", "javascript", "yaml", "json", "bash"]
+  targets:
+    - termux
+    - ubuntu_vds
+  policies:
+    kvkk_compliant: true
+    privacy_by_design: true
+environments:
+  runtime:
+    python: "3.12"
+    node: "dynamic"
+  services:
+    api_base_url: "http://127.0.0.1:8000"
+    ngrok_usage: "enabled"
+  feature_flags:
+    mock_mode: false
+    zero_touch_mode: true
+    ai_market_radar: true
+secrets_placeholders:
+  OPENAI_API_KEY: "\${OPENAI_API_KEY}"
+  NGROK_AUTHTOKEN: "\${NGROK_AUTHTOKEN}"
+  TRENDYOL_SUPPLIER_ID: "\${TRENDYOL_SUPPLIER_ID}"
+  TRENDYOL_API_KEY: "\${TRENDYOL_API_KEY}"
+  TRENDYOL_API_SECRET: "\${TRENDYOL_API_SECRET}"
+  IYZICO_API_KEY: "\${IYZICO_API_KEY}"
+  IYZICO_SECRET: "\${IYZICO_SECRET}"
+  GIB_EFATURA_TOKEN: "\${GIB_EFATURA_TOKEN}"
+admin_accounts:
+  - email: "admin@asilparla.com"
+    password: "Admin!234"
+pilot_sellers:
+  - email: "pilot@asilparla.com"
+    password: "Pilot!234"
+design_system:
+  theme: "Aurora Nebula (premium)"
+  colors: ["#0B1220", "#121B2E", "#1F2D4A", "#8AB4F8", "#A78BFA", "#34D399"]
+  fonts: ["Inter", "Manrope"]
+  components: ["Card", "KPIWidget", "MarketRadarPanel", "AnomalyBanner", "ActionDock"]
+docs:
+  quickstart: "docs/onboarding/quick_start.md"
+  seller_checklist: "docs/onboarding/seller_checklist.md"
