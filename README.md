@@ -1,16 +1,31 @@
-# asilParla v1.17.02
+# 🧠 AsilParla v1.17.02
+> **AI destekli Trendyol Satıcı Otomasyon Platformu**  
+> Sipariş, stok, kargo, e-fatura, finans, tedarik, ceza ve müşteri yönetimini tamamen otomatikleştirir.  
+> 💼 Yönetici, 📱 Satıcı, 🔒 KVKK, ⚙️ API — hepsi tek çatı altında.
 
-Trendyol satıcıları için uçtan uca AI destekli yönetim sistemi.
-- Termux/Ubuntu uyumlu
-- Cursor ile otomatik doldurulacak iskelet
-- Gerçek API'ler modüler adapter yapısında
+---
 
-## Hızlı Başlangıç
-1) `.env.example` → `.env`
-2) `scripts/init.sh` (Cursor tamamlayacak)
-3) `scripts/start_all.sh` ile API çalıştır
-4) `http://127.0.0.1:8000/docs`
+## 🚀 Genel Bakış
+**AsilParla**, Trendyol satıcıları için tasarlanmış uçtan uca yapay zekâ destekli otomasyon sistemidir.  
+Tüm operasyonel yükü ortadan kaldırır, kârı maksimize eder ve **GİB / KVKK / Trendyol politikalarına** tam uyum sağlar.  
 
-## Tasarım
-- Tema: **Aurora Nebula (premium)**
-- Bileşenler: KPIWidget, MarketRadarPanel, ActionDock, AnomalyBanner
+> **Sürüm:** v1.17.02  
+> **Geliştirici:** Muhammed Kulay  
+> **Tema:** Premium Dark-Neon Responsive  
+> **Kod Adı:** AI Market Engine
+
+---
+
+## ⚙️ Kurulum
+### 1️⃣ Gereksinimler
+- Python ≥ 3.12  
+- Node.js ≥ 24.x  
+- Git ≥ 2.43  
+- Ngrok (yerel test için)  
+- pip / npm / pnpm
+
+### 2️⃣ Klonlama
+```bash
+git clone https://github.com/muhammedkulay-hub/asilParla-1.17.02.git
+cd asilParla-1.17.02
+

@@ -1,0 +1,38 @@
+[project]
+name = "asilParla"
+version = "1.17.02"
+description = "AI-Powered Trendyol Seller Automation System"
+authors = [
+  { name = "Muhammed Kulay", email = "muhammedkulay@gmail.com" },
+  { name = "Dilber Kalkan", email = "asilparla73@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "sqlalchemy",
+  "redis",
+  "celery",
+  "openai",
+  "aiohttp",
+  "jinja2",
+  "cryptography",
+  "requests",
+  "pytest",
+  "loguru"
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
